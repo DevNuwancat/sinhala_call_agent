@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark">
-<title>Real Estate Call Agent</title>
+<title>Sri Lanka Call Agent</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#0b0b0c; --card:#141415; --card2:#1a1a1b; --chip:#1d1d1f; --track:#232325;
   --line:rgba(255,255,255,.06); --text:#f2f1ee; --muted:#8b8a85; --muted2:#a3a29d; --dim:#6d6c68;
-  --accent:#ff6b3d; --accent-hover:#ff8259; --green:#3ecf8e; --amber:#ffb02e; --red:#e5484d; --cold:#7aa2ff;
+  --accent:#3ecf8e; --accent-hover:#5ddba5; --green:#3ecf8e; --amber:#ffb02e; --red:#e5484d; --cold:#7aa2ff;
   --mono:'DM Mono',monospace;
 }
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;-webkit-text-size-adjust:100%}
-a{color:var(--accent)} a:hover{color:#ff9a78}
+a{color:var(--accent)} a:hover{color:#7fe3b5}
 button{font-family:inherit;color:inherit}
 ::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-thumb{background:#2a2a2c;border-radius:3px}
 @keyframes ripple{0%{transform:scale(.6);opacity:.55}100%{transform:scale(2.4);opacity:0}}
@@ -129,16 +129,16 @@ button{font-family:inherit;color:inherit}
 .panel.prompt h3{margin:0;font-size:20px;font-weight:500;letter-spacing:-0.02em}
 .panel.prompt p{margin:0;font-size:13px;color:var(--muted)}
 .panel.prompt textarea{flex:none;min-height:340px;border:1px solid var(--line);background:var(--card2);border-radius:16px;padding:16px;font:13px/1.65 var(--mono);color:var(--text);resize:none;outline:none}
-.panel.prompt textarea:focus{border-color:rgba(255,107,61,.5)}
+.panel.prompt textarea:focus{border-color:rgba(62,207,142,.5)}
 .tpl-row{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;flex:none;-webkit-overflow-scrolling:touch}
 .tpl{border:0;border-radius:999px;padding:8px 14px;font:500 12px 'DM Sans';background:var(--chip);color:var(--muted2);white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:7px;flex:none}
 .tpl:hover{background:#262628}
 .tpl.on{background:var(--text);color:var(--bg)}
 .tpl .d{width:7px;height:7px;border-radius:50%;background:var(--green);flex:none}
 .tpl.add{border:1px dashed rgba(255,255,255,.22);background:transparent;color:var(--accent)}
-.tpl.add.on{background:rgba(255,107,61,.14)}
+.tpl.add.on{background:rgba(62,207,142,.14)}
 .tpl-name{border:1px solid var(--line);background:var(--card2);border-radius:14px;padding:12px 16px;font:500 14px 'DM Sans';color:var(--text);outline:none;flex:none}
-.tpl-name:focus{border-color:rgba(255,107,61,.5)}
+.tpl-name:focus{border-color:rgba(62,207,142,.5)}
 .panel.prompt textarea.tpl-first{min-height:0;flex:none;font:500 14px 'DM Sans';border:1px solid var(--line);background:var(--card2);border-radius:14px;padding:12px 16px;font:500 14px 'DM Sans';color:var(--text);outline:none;flex:none;height:76px;resize:none}
 .tpl-status{font-size:12px;color:var(--muted);flex:none;display:flex;align-items:center;gap:7px}
 .tpl-status.live{color:var(--green)}
@@ -174,7 +174,7 @@ button{font-family:inherit;color:inherit}
 .lines{flex:1;overflow:auto;padding:18px 26px 12px;display:flex;flex-direction:column;gap:8px;min-height:120px}
 .line{padding:10px 14px;border-radius:14px;background:transparent;border:1px solid rgba(255,255,255,.05);transition:all .25s}
 .line.seek{cursor:pointer}
-.line.act{background:var(--track);border-color:rgba(255,107,61,.5)}
+.line.act{background:var(--track);border-color:rgba(62,207,142,.5)}
 .line.dim{opacity:.5}
 .line .w{font-size:11px;margin-bottom:3px;color:var(--muted)} .line .w.a{color:var(--accent)}
 .line .t{font-size:13.5px;line-height:1.45}
@@ -188,14 +188,14 @@ button{font-family:inherit;color:inherit}
 .stage .xbtn{position:absolute;top:16px;right:16px;z-index:3}
 .orbside{position:relative;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:20px}
 .glow{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .5s}
-.glow.go{background:radial-gradient(circle at 50% 38%,rgba(255,107,61,.22),transparent 60%)}
+.glow.go{background:radial-gradient(circle at 50% 38%,rgba(62,207,142,.22),transparent 60%)}
 .glow.gg{background:radial-gradient(circle at 50% 38%,rgba(62,207,142,.24),transparent 60%)}
 .orbbox{position:relative;width:260px;height:260px;display:grid;place-items:center;flex:none}
 .ring{position:absolute;width:120px;height:120px;border-radius:50%;border:1.5px solid var(--accent);animation:ripple 3s ease-out infinite;transition:border-color .35s,opacity .35s}
 .bub{position:absolute;border-radius:50%;background:var(--accent);transition:background-color .35s,opacity .35s}
 .orbbox.g .ring{border-color:var(--green)} .orbbox.g .bub{background:var(--green)}
 .orbbox.off .ring{opacity:0;animation:none}
-.orb{position:relative;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ff9a78,#ff6b3d 55%,#c8431c);transition:transform .12s ease-out,box-shadow .4s;box-shadow:0 0 70px rgba(255,107,61,.45);display:grid;place-items:center;font-size:30px;color:var(--bg);font-weight:600}
+.orb{position:relative;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#7fe3b5,#3ecf8e 55%,#1f9d66);transition:transform .12s ease-out,box-shadow .4s;box-shadow:0 0 70px rgba(62,207,142,.45);display:grid;place-items:center;font-size:30px;color:var(--bg);font-weight:600}
 .orb .og{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 35% 30%,#9af2c6,#3ecf8e 55%,#1d9a66);opacity:0;transition:opacity .35s}
 .orb .ot{position:relative}
 .orbbox.g .orb{box-shadow:0 0 70px rgba(62,207,142,.5)}
@@ -213,8 +213,8 @@ button{font-family:inherit;color:inherit}
 .btn-start:hover{background:var(--accent-hover)}
 .hint{font-size:12px;color:var(--muted);text-align:center;max-width:300px;line-height:1.5}
 .hint.err{color:var(--red)}
-.rowc.hl{background:rgba(255,107,61,.12);box-shadow:inset 3px 0 0 var(--accent);animation:hlfade 4.5s ease forwards}
-@keyframes hlfade{0%,70%{background:rgba(255,107,61,.14)}100%{background:transparent;box-shadow:inset 3px 0 0 transparent}}
+.rowc.hl{background:rgba(62,207,142,.12);box-shadow:inset 3px 0 0 var(--accent);animation:hlfade 4.5s ease forwards}
+@keyframes hlfade{0%,70%{background:rgba(62,207,142,.14)}100%{background:transparent;box-shadow:inset 3px 0 0 transparent}}
 
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#1d1d1f;border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:10px 18px;font-size:13px;z-index:40;animation:rise .3s ease both;max-width:90vw}
 
@@ -264,7 +264,7 @@ button{font-family:inherit;color:inherit}
 <div class="topbar" id="topbar"><i></i></div>
 <div class="app">
   <aside class="side">
-    <div class="brand"><div class="logo">R</div><div class="bt"><span>Real Estate</span><span class="sub">Call Agent</span></div></div>
+    <div class="brand"><div class="logo">S</div><div class="bt"><span>Sri Lanka</span><span class="sub">Call Agent</span></div></div>
     <button class="nav active" id="nav-dash">Dashboard</button>
     <button class="nav" id="nav-script">Agent script</button>
     <button class="nav" id="nav-refresh">Refresh data</button>
@@ -279,7 +279,7 @@ button{font-family:inherit;color:inherit}
 
   <main class="main" id="main">
     <div class="mbar">
-      <div class="brand"><div class="logo">R</div><div class="bt"><span>Real Estate</span><span class="sub">Call Agent</span></div></div>
+      <div class="brand"><div class="logo">S</div><div class="bt"><span>Sri Lanka</span><span class="sub">Call Agent</span></div></div>
       <div class="srv" id="srv-chip"><span class="dot" id="srv-dot-m"></span><span id="srv-label-m">Checking…</span></div>
     </div>
 
@@ -475,7 +475,7 @@ button{font-family:inherit;color:inherit}
       { label: "Avg call length", value: avg ? fmt(avg) : "—", chip: "", up: true, note: durs.length + " timed calls" }
     ];
     $("kpis").innerHTML = cards.map(function (k, i) {
-      var chip = k.chip ? '<span class="chip" style="background:' + (k.up ? "rgba(62,207,142,.14)" : "rgba(255,107,61,.14)") + ";color:" + (k.up ? "#3ecf8e" : "#ff6b3d") + '">' + esc(k.chip) + "</span>" : "";
+      var chip = k.chip ? '<span class="chip" style="background:' + (k.up ? "rgba(62,207,142,.14)" : "rgba(62,207,142,.14)") + ";color:" + (k.up ? "#3ecf8e" : "#3ecf8e") + '">' + esc(k.chip) + "</span>" : "";
       return '<div class="kpi" style="animation-delay:' + i * 60 + 'ms"><div class="top">' + esc(k.label) + chip + '</div><div class="val">' + esc(k.value) + '</div><div class="note">' + esc(k.note) + "</div></div>";
     }).join("");
   }
@@ -513,14 +513,14 @@ button{font-family:inherit;color:inherit}
     }).join("");
     var tipLeft = Math.max(14, Math.min(86, X(hi) / 6));
     $("chart").innerHTML =
-      '<svg viewBox="0 0 600 220" role="img" aria-label="Calls per day for the last 7 days"><defs><linearGradient id="ar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff6b3d" stop-opacity=".28"></stop><stop offset="1" stop-color="#ff6b3d" stop-opacity="0"></stop></linearGradient></defs>' +
+      '<svg viewBox="0 0 600 220" role="img" aria-label="Calls per day for the last 7 days"><defs><linearGradient id="ar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3ecf8e" stop-opacity=".28"></stop><stop offset="1" stop-color="#3ecf8e" stop-opacity="0"></stop></linearGradient></defs>' +
       grid +
       '<path d="' + lp + " L" + X(6) + " 190 L" + X(0) + ' 190 Z" fill="url(#ar)"></path>' +
-      '<path d="' + lp + '" fill="none" stroke="#ff6b3d" stroke-width="3" stroke-linecap="round"></path>' +
+      '<path d="' + lp + '" fill="none" stroke="#3ecf8e" stroke-width="3" stroke-linecap="round"></path>' +
       '<line x1="' + X(hi) + '" x2="' + X(hi) + '" y1="8" y2="190" stroke="rgba(255,255,255,.25)" stroke-dasharray="3 4"></line>' +
-      '<circle cx="' + X(hi) + '" cy="' + Y(hd.calls) + '" r="6" fill="#ff6b3d" stroke="#141415" stroke-width="3"></circle>' +
+      '<circle cx="' + X(hi) + '" cy="' + Y(hd.calls) + '" r="6" fill="#3ecf8e" stroke="#141415" stroke-width="3"></circle>' +
       labels + "</svg>" +
-      '<div class="tip" style="left:' + tipLeft + '%"><div class="d">' + hd.date.toLocaleDateString([], { weekday: "long", day: "numeric", month: "short" }) + '</div><div style="margin-top:4px"><span style="color:#ff6b3d">●</span> Calls <b>' + hd.calls + '</b></div></div>';
+      '<div class="tip" style="left:' + tipLeft + '%"><div class="d">' + hd.date.toLocaleDateString([], { weekday: "long", day: "numeric", month: "short" }) + '</div><div style="margin-top:4px"><span style="color:#3ecf8e">●</span> Calls <b>' + hd.calls + '</b></div></div>';
   }
 
   function renderRows() {
