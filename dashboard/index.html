@@ -11,7 +11,7 @@
 :root{
   --bg:#0b0b0c; --card:#141415; --card2:#1a1a1b; --chip:#1d1d1f; --track:#232325;
   --line:rgba(255,255,255,.06); --text:#f2f1ee; --muted:#8b8a85; --muted2:#a3a29d; --dim:#6d6c68;
-  --accent:#3ecf8e; --accent-hover:#5ddba5; --green:#3ecf8e; --amber:#ffb02e; --red:#e5484d; --cold:#7aa2ff;
+  --accent:#3ecf8e; --orange:#ff6b3d; --accent-hover:#5ddba5; --green:#3ecf8e; --amber:#ffb02e; --red:#e5484d; --cold:#7aa2ff;
   --mono:'DM Mono',monospace;
 }
 *{box-sizing:border-box}
@@ -188,14 +188,14 @@ button{font-family:inherit;color:inherit}
 .stage .xbtn{position:absolute;top:16px;right:16px;z-index:3}
 .orbside{position:relative;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:20px}
 .glow{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .5s}
-.glow.go{background:radial-gradient(circle at 50% 38%,rgba(62,207,142,.22),transparent 60%)}
+.glow.go{background:radial-gradient(circle at 50% 38%,rgba(255,107,61,.22),transparent 60%)}
 .glow.gg{background:radial-gradient(circle at 50% 38%,rgba(62,207,142,.24),transparent 60%)}
 .orbbox{position:relative;width:260px;height:260px;display:grid;place-items:center;flex:none}
-.ring{position:absolute;width:120px;height:120px;border-radius:50%;border:1.5px solid var(--accent);animation:ripple 3s ease-out infinite;transition:border-color .35s,opacity .35s}
-.bub{position:absolute;border-radius:50%;background:var(--accent);transition:background-color .35s,opacity .35s}
+.ring{position:absolute;width:120px;height:120px;border-radius:50%;border:1.5px solid var(--orange);animation:ripple 3s ease-out infinite;transition:border-color .35s,opacity .35s}
+.bub{position:absolute;border-radius:50%;background:var(--orange);transition:background-color .35s,opacity .35s}
 .orbbox.g .ring{border-color:var(--green)} .orbbox.g .bub{background:var(--green)}
 .orbbox.off .ring{opacity:0;animation:none}
-.orb{position:relative;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#7fe3b5,#3ecf8e 55%,#1f9d66);transition:transform .12s ease-out,box-shadow .4s;box-shadow:0 0 70px rgba(62,207,142,.45);display:grid;place-items:center;font-size:30px;color:var(--bg);font-weight:600}
+.orb{position:relative;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ff9a78,#ff6b3d 55%,#c8431c);transition:transform .12s ease-out,box-shadow .4s;box-shadow:0 0 70px rgba(255,107,61,.45);display:grid;place-items:center;font-size:30px;color:var(--bg);font-weight:600}
 .orb .og{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 35% 30%,#9af2c6,#3ecf8e 55%,#1d9a66);opacity:0;transition:opacity .35s}
 .orb .ot{position:relative}
 .orbbox.g .orb{box-shadow:0 0 70px rgba(62,207,142,.5)}
@@ -887,7 +887,7 @@ button{font-family:inherit;color:inherit}
 
     var lab = { setup: "READY", waking: "STARTING THE SERVICE", connecting: "CONNECTING", analyzing: "SAVING YOUR CALL", done: "ALL DONE" }[ph];
     if (ph === "live") lab = T.speaker === "agent" ? "AGENT SPEAKING" : T.speaker === "lead" ? "YOU’RE SPEAKING" : "CONNECTED";
-    var l = $("st-label"); l.textContent = lab; l.style.color = green ? "var(--green)" : "var(--accent)";
+    var l = $("st-label"); l.textContent = lab; l.style.color = green ? "var(--green)" : "var(--orange)";
     var timer = ph === "live" ? fmt(T.secs) : ph === "waking" ? "This can take up to a minute" : ph === "analyzing" ? "This usually takes a few seconds" : ph === "done" ? "Opening your call log…" : "";
     var t = $("st-t"); if (t.textContent !== timer) t.textContent = timer;
   }
