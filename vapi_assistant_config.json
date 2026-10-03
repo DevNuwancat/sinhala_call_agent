@@ -45,6 +45,6 @@
     }
   },
   "server": {
-    "url": "https://YOUR-RENDER-BACKEND-URL.onrender.com/webhooks/vapi"
+    "url": "https://sinhala-call-agent.onrender.com/webhooks/vapi"
   }
 }
