@@ -357,7 +357,7 @@ button{font-family:inherit;color:inherit}
   var VAPI_PUBLIC_KEY = "b822df8b-1478-4d9f-926b-44ade85e9ece";   // public key: safe in the browser
   var VAPI_ASSISTANT_ID = "807802f9-e4e2-4e56-a50b-af024ed71260";
   var VAPI_SDK_URL = "https://cdn.jsdelivr.net/npm/@vapi-ai/web@2.7.1/+esm";
-  var DEFAULT_BACKEND = "https://realstate-call-agent.onrender.com";
+  var DEFAULT_BACKEND = "https://YOUR-NEW-RENDER-BACKEND-URL.onrender.com"; // TODO: set after creating the new Render service
   // ?api=http://localhost:8000 lets you test against a local backend
   var BACKEND = (new URLSearchParams(location.search).get("api") || DEFAULT_BACKEND).replace(/\/$/, "");
 
